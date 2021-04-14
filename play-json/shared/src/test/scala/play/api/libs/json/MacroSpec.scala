@@ -6,7 +6,6 @@ package play.api.libs.json
 
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.AnyWordSpec
-import ScalaTestPosition._
 
 object TestFormats {
   implicit def eitherReads[A: Reads, B: Reads]: Reads[Either[A, B]] = Reads[Either[A, B]] { js =>
